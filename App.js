@@ -1,12 +1,12 @@
 import React from 'react';
 import { StyleSheet, Text, View, Image } from 'react-native';
-
+import {Greeting} from './others/Greeting';
  
 export default class App extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text>This is Mobile app</Text>
+        <Text style = {styles.header}>This is Mobile app</Text>
         <Image
           source={{uri: 'https://upload.wikimedia.org/wikipedia/commons/d/de/Bananavarieties.jpg'}}
           style={{width: 320, height:180 }}
@@ -23,18 +23,15 @@ export default class App extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    top : '4%' ,
     backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
   },
+  header: {
+    fontWeight: 'bold',
+    fontSize: 30,
+    backgroundColor: 'rgb(128,128,128)',
+    width: '100%',
+  }
 });
 
-class Greeting extends React.Component {
-  render() {
-    return (
-      <View style={{alignItems: 'center'}}>
-        <Text>Hello {this.props.name}!</Text>
-      </View>
-    );
-  }
-}
+
