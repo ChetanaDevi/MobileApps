@@ -1,15 +1,15 @@
 import React from 'react';
 import { StyleSheet, Text, View, Image } from 'react-native';
-import { Bananas } from './Bananas';
+
  
 export default class App extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text>This is new app</Text>
+        <Text>This is Mobile app</Text>
         <Image
-          source={{uri: 'https://i.chzbgr.com/full/7345954048/h7E2C65F9/'}}
-          style={{width: 300, height:180 }}
+          source={{uri: 'https://upload.wikimedia.org/wikipedia/commons/d/de/Bananavarieties.jpg'}}
+          style={{width: 320, height:180 }}
         />
       </View>
     );
