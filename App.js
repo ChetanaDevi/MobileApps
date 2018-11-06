@@ -1,9 +1,15 @@
 import React from 'react';
-import { StyleSheet, Text, View, Image } from 'react-native';
+import PropTypes from 'prop-types';
+import { StyleSheet, Text, View, Image, TouchableHighlight } from 'react-native';
 import {ButtonBasics} from './others/TouchButton';
+// import {NavigatorIOSApp} from './others/NavigatorIOSApp';
  
 export default class App extends React.Component {
+
+  
+
   render() {
+
     return (
       <View style={styles.container}>
         <View style={{flex: 0.1, flexDirection: 'row',height: 20,
@@ -15,6 +21,7 @@ export default class App extends React.Component {
             <Text style = {styles.header}>This is Mobile app</Text>
           </View>
         </View>
+        
         <ButtonBasics />
                
        
@@ -22,6 +29,7 @@ export default class App extends React.Component {
     );
   }
 }
+
 
 const styles = StyleSheet.create({
   container: {
